@@ -17,7 +17,7 @@ sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_genera
 sed -i 's/OpenWrt/NbWrt-RAX3000M/g' package/base-files/files/bin/config_generate
 
 # 3. 安装依赖（OpenClash必需，保留）
-sudo apt install libfuse-dev
+#sudo apt install libfuse-dev
 
 # 4. 更新Go语言（OpenClash必需，保留）
 rm -rf feeds/packages/lang/golang
