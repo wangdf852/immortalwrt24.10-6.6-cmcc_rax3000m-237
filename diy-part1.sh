@@ -13,9 +13,9 @@
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
-# Add a feed source
+# Add OpenClash 源
 echo 'src-git openclash https://github.com/vernesong/OpenClash' >>feeds.conf.default
 
-# 你原来的插件
-git clone https://github.com/gdy666/luci-app-lucky.git package/lucky
-git clone https://github.com/sbwml/luci-app-openlist2 package/openlist
+# 插件
+git clone https://github.com/gdy666/luci-app-lucky package/lucky
+git clone https://github.com/sbwml/luci-app-openlist2 package/openlist2
