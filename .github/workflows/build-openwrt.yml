@@ -41,16 +41,6 @@ jobs:
     - name: Checkout
       uses: actions/checkout@main
 
-    # ==================== 修复：添加 Swap 内存（防止编译失败）====================
-    - name: Add Swap
-      run: |
-        sudo fallocate -l 8G /swapfile
-        sudo chmod 600 /swapfile
-        sudo mkswap /swapfile
-        sudo swapon /swapfile
-        free -h
-    # ==========================================================================
-
     - name: Initialization environment
       env:
         DEBIAN_FRONTEND: noninteractive
