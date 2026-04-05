@@ -164,12 +164,12 @@ jobs:
       run: |
         echo "release_tag=$(date +"%Y.%m.%d-%H%M-immortalwrt24.10-6.6-cmcc_rax3000m-237")" >> $GITHUB_OUTPUT
         touch release.txt
-        echo "cmcc_rax3000m-237大功率固件" >> release.txt
+        echo "NbWrt_RAX3000m-237大功率固件" >> release.txt
         echo "后台：192.168.10.1" >> release.txt
         echo "账号：root" >> release.txt
         echo "密码：无" >> release.txt
         echo "默认主题：Argon" >> release.txt
-        echo "集成插件：cups openclash openlist2 diskman lucky ksmb hd-idle autoreboot mtwifi-cfg" >> release.txt
+        echo "集成插件：mwan3 cups openclash openlist2 diskman lucky ksmb hd-idle autoreboot mtwifi-cfg" >> release.txt
         echo "编译源码：https://github.com/padavanonly/immortalwrt-mt798x-6.6" >> release.txt
         echo "status=success" >> $GITHUB_OUTPUT
 
